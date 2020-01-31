@@ -19,7 +19,30 @@
 
     <Theme />
 
-    <topic text="Online registration will open soon." />
+    <v-container>
+      <v-row justify="center" align="center">
+        <v-col cols="12" sm="4">
+          <v-img max-width="250px" :src="require('../assets/img/think2.svg')"></v-img>
+        </v-col>
+        <v-col cols="12" sm="8">
+          <h6
+            class="bottomtext text-wrap py-2"
+          >Wear your 'Thinking Hat' then start thinking about themes & product which you want to design and gear up to participate in AAKRUTI 2020.</h6>
+        </v-col>
+      </v-row>
+
+      <v-row justify="center" align="center">
+        <v-col cols="12" sm="8">
+          <h6
+            class="bottomtext text-wrap py-2"
+          >Brain storm with your buddies and come up with Innovative project that makes a difference and prepare write-up for your concept. Once the registration window opens, you will be able to submit your registration quickly.</h6>
+        </v-col>
+
+        <v-col cols="12" sm="4">
+          <v-img max-width="250px" :src="require('../assets/img/think.svg')"></v-img>
+        </v-col>
+      </v-row>
+    </v-container>
 
     <!-- <v-layout row wrap justify-center align-center>
         <v-flex xs12 md3 class="pa-1">
@@ -156,6 +179,12 @@ export default {
   background-color: white;
   color: #01406c;
   /* background-color: rgb(119, 119, 119); */
+}
+.bottomtext {
+  font-size: calc(17px + 5 * ((100vw - 320px) / 880));
+  font-family: "3ds-SemiBold";
+  text-align: left !important;
+  color: #2F2E41;
 }
 
 .fontz {

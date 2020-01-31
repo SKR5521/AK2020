@@ -57,7 +57,6 @@
             </v-col>
 
             <v-col cols="12" sm="8" align="end">
-              
               <div>
                 <v-btn
                   v-for="item in items"
@@ -204,7 +203,10 @@ export default {
   font-family: "3ds", sans-serif;
   text-align: justify !important;
   /* DCDCDC   dbdbdb */
-  background-color: #e2e2e2;
+  background-color: #F1F1F1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .list-inline {

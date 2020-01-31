@@ -3,19 +3,19 @@
     <v-container>
       <topic text="AAKRUTI2020 THEMES" />
       <v-row row wrap justify="center" fill-height>
-        <v-col cols="12" sm="6" class="pa-4" v-for=" itm in cont" :key="itm.id">
+        <v-col cols="12" sm="6" class="py-4" v-for=" itm in cont" :key="itm.id">
           <v-card dark class="bord elevation-6" height="100%">
-            <v-card-title class="justify-center">
+            <v-card-title class="justify-center text-wrap" >
               <v-row class="fill-height align-center">
-                <v-col cols="4">
+                <v-col cols="3">
                   <v-img
                     color="white"
                     max-width="150px"
                     :src="require('../assets/img/themes/' + itm.id + '.svg')"
                   ></v-img>
                 </v-col>
-                <v-col cols="8">
-                  <h6 class="fontz2 ">{{itm.tag}}</h6>
+                <v-col cols="9">
+                  <h6 class="fontz2 text-wrap">{{itm.tag}}</h6>
                 </v-col>
               </v-row>
             </v-card-title>
