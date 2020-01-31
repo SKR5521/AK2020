@@ -4,8 +4,8 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   mode: 'spa',
   router: {    
-    // base: '/aakruti/'
-    base: '/AK2020/'
+    base: '/aakruti/'
+    // base: '/AK2020/'
   },
   /*
   ** Headers of the page
