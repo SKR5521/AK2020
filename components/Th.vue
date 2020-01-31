@@ -15,7 +15,9 @@
                   ></v-img>
                 </v-col>
                 <v-col cols="9">
-                  <h6 class="fontz2 text-wrap">{{itm.tag}}</h6>
+                  <div width="100%">
+                    <h6 class="fontz2 text-wrap">{{itm.tag}}</h6>
+                  </div>
                 </v-col>
               </v-row>
             </v-card-title>
