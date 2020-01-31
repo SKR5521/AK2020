@@ -1,0 +1,87 @@
+<template>
+  <v-app class="body-all" id="body">
+    <v-container fluid py-3>
+      <v-layout row class="px-4">
+        <v-flex xs3>
+          <a target="_blank" href="https://www.3ds.com/">
+            <v-img max-width="120px" :src="require('../assets/img/DS1.png')"></v-img>
+          </a>
+        </v-flex>
+        <v-spacer></v-spacer>
+        <v-flex xs3>
+          <v-layout row wrap justify-end>
+            <v-img max-width="120px" :src="require('../assets/img/logo.png')"></v-img>
+          </v-layout>
+        </v-flex>
+      </v-layout>
+    </v-container>
+    <Navbar />
+    <v-content>
+     
+    </v-content>
+
+    <v-container class="hidden-sm-and-up pt-0">
+      <v-layout justify-center align-content-center>
+        <v-flex xs12 text-xs-center>
+          <v-btn color="#012D52" class="fontzd" rounded small dark @click="top">
+            <v-icon class="mr-1">fas fa-angle-up</v-icon>Top
+          </v-btn>
+        </v-flex>
+      </v-layout>
+    </v-container>
+
+    <Footer />
+  </v-app>
+</template>
+
+
+<script>
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+export default {
+  components: {
+    Navbar,
+    Footer
+  },
+  methods: {
+    top() {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
+    }
+  }
+};
+</script>
+<style>
+.body-all {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "3ds", sans-serif;
+  text-align: justify !important;
+  letter-spacing: 0.01rem;
+  /* DCDCDC   dbdbdb */
+  background-color: #e2e2e2;
+}
+.img-fluid {
+  max-width: 100% !important ;
+  height: auto !important;
+}
+@font-face {
+  font-family: "3ds";
+  src: url("https://ui.3ds.com/fonts/3ds/3ds-Regular-v2.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "3ds-light";
+  src: url("https://ui.3ds.com/fonts/3ds/3ds-Light-v2.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "3ds-SemiBold";
+  src: url("https://ui.3ds.com/fonts/3ds/3ds-SemiBold-v2.woff2") format("woff2");
+}
+</style>
