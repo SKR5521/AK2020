@@ -15,8 +15,16 @@
                   ></v-img>
                 </v-col>
                 <v-col cols="9">
-                  <p class="fontz2 mb-0">{{ itm.tag }}</p>
-                  <p class="fontztag2 mb-0">{{ itm.tag2 }}</p>
+                  <div v-if="itm.id == 1">
+                    <p class="fontz2 mb-0">
+                      {{ itm.tag }}
+                      <span class="fontztag2 mb-0">{{ itm.tag2 }}</span>
+                    </p>
+                  </div>
+                  <div v-else>
+                    <p class="fontz2 mb-0">{{ itm.tag }}</p>
+                    <p class="fontztag2 mb-0">{{ itm.tag2 }}</p>
+                  </div>
                 </v-col>
               </v-row>
             </v-card-title>
@@ -44,8 +52,8 @@
 </template>
 
 <script>
-import topic from "@/components/topic";
-import Subtitle from "@/components/Subtitle";
+import topic from '@/components/topic'
+import Subtitle from '@/components/Subtitle'
 
 export default {
   components: {
@@ -57,57 +65,57 @@ export default {
       cont: [
         {
           id: 1,
-          tag: "Small Is",
-          tag2: "Big",
+          tag: 'Small Is',
+          tag2: 'Big',
           what:
-            "Think, Re-engineer, Simulate and validate existing product and optimize it. The product should be lighter, small in size, energy efficient and optimized for performance. Mandatory expectation: You are expected to modify / optimize existing product / device. Hence presenting existing product and how it is optimized is a ‘must’.",
-          who: "Future Ready Engineers.",
+            'Think, Re-engineer, Simulate and validate existing product and optimize it. The product should be lighter, small in size, energy efficient and optimized for performance. Mandatory expectation: You are expected to modify / optimize existing product / device. Hence presenting existing product and how it is optimized is a ‘must’.',
+          who: 'Future Ready Engineers.',
           How:
-            "Using principles of Reverse Engineering 3D Scanning existing product, Topology Optimization, Additive Manufacturing."
+            'Using principles of Reverse Engineering 3D Scanning existing product, Topology Optimization, Additive Manufacturing.'
         },
 
         {
           id: 2,
-          tag: "Medical Devices with",
-          tag2: "Innovation",
+          tag: 'Medical Devices with',
+          tag2: 'Innovation',
           what:
-            "What if, we have the medical device(s) which will help patients (rural) in critical situation?  These devices should be cost effective, energy efficient, easy to handle and cheaper. Design device which is innovative and will be a great boon to patients/medical practitioners.",
-          who: "Doctor, Physician, Patients.",
+            'What if, we have the medical device(s) which will help patients (rural) in critical situation?  These devices should be cost effective, energy efficient, easy to handle and cheaper. Design device which is innovative and will be a great boon to patients/medical practitioners.',
+          who: 'Doctor, Physician, Patients.',
           How:
-            "Implementing the science of biomedical, bioengineering, human ergonomics, human safety, medical regulatory & norms."
+            'Implementing the science of biomedical, bioengineering, human ergonomics, human safety, medical regulatory & norms.'
         },
 
         {
           id: 3,
-          tag: "Design Product for",
-          tag2: "Rural Entrepreneurship",
+          tag: 'Design Product for',
+          tag2: 'Rural Entrepreneurship',
           what:
-            "If we provide product ideas to rural youth which they can manufacture locally, can we improve their livelihood opportunities? ",
-          who: "Farmers, Rural youths, Villagers.",
+            'If we provide product ideas to rural youth which they can manufacture locally, can we improve their livelihood opportunities? ',
+          who: 'Farmers, Rural youths, Villagers.',
           How:
-            "Can we boost the rural entrepreneurship? In the field of Agriculture, affordable energy for remote places, handicraft, sanitation etc. By developing product ideas with DIY kits."
+            'Can we boost the rural entrepreneurship? In the field of Agriculture, affordable energy for remote places, handicraft, sanitation etc. By developing product ideas with DIY kits.'
         },
 
         {
           id: 4,
-          tag: "Stop Pollution at",
-          tag2: "Source",
+          tag: 'Stop Pollution at',
+          tag2: 'Source',
           what:
-            "If we prevent source of pollution, can we create healthier environment and sustainable universe for our future generation?",
-          who: "Universal citizens",
+            'If we prevent source of pollution, can we create healthier environment and sustainable universe for our future generation?',
+          who: 'Universal citizens',
           How:
-            "Can we eliminate/replace the components?  Which are causing heavy pollution, larger carbon footprint, increasing GHGs by managing eliminating problem at source?"
+            'Can we eliminate/replace the components?  Which are causing heavy pollution, larger carbon footprint, increasing GHGs by managing eliminating problem at source?'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 
 <style scoped>
 .fontz {
   font-size: calc(14px + 1 * ((100vw - 320px) / 880));
-  font-family: "3ds-light";
+  font-family: '3ds-light';
   text-align: left !important;
   color: #2e2e2e !important;
 }
@@ -119,20 +127,20 @@ export default {
 }
 .fontzd {
   font-size: calc(15px + 1 * ((100vw - 320px) / 880));
-  font-family: "3ds";
+  font-family: '3ds';
   text-align: left !important;
   color: #253c53;
 }
 
 .fontz2 {
   font-size: calc(18px + 6 * ((100vw - 320px) / 880));
-  font-family: "3ds";
+  font-family: '3ds';
   text-align: left !important;
   color: #ef5350;
 }
 .fontztag2 {
   font-size: calc(20px + 8 * ((100vw - 320px) / 880));
-  font-family: "3ds-SemiBold";
+  font-family: '3ds-SemiBold';
   text-align: left !important;
   color: #ef5350;
 }

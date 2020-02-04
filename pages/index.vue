@@ -27,7 +27,7 @@
         <v-col cols="12" sm="8">
           <p
             class="bottomtext mb-0 text-wrap py-2"
-          >Wear your 'Thinking Hat' then start thinking about themes & product which you want to design and gear up to participate in AAKRUTI 2020.</p>
+          >Wear your 'Thinking Hat' and start thinking about themes & product which you want to design and gear up to participate in AAKRUTI 2020.</p>
         </v-col>
       </v-row>
 
@@ -40,6 +40,13 @@
 
         <v-col cols="12" sm="4">
           <v-img class="mx-auto" max-width="250px" :src="require('../assets/img/think2.svg')"></v-img>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12">
+          <p
+            class="bottomtext mb-0 text-wrap py-2"
+          >Registration open soon in March 2020 first week. Stay tuned for AAKRUTI website and FaceBook Page.</p>
         </v-col>
       </v-row>
     </v-container>
@@ -151,10 +158,10 @@
 </template> 
 
 <script>
-import Homehero from "@/components/HomeHero";
-import topic from "@/components/topic";
-import Theme from "@/components/Th";
-import Subtitle from "@/components/Subtitle";
+import Homehero from '@/components/HomeHero'
+import topic from '@/components/topic'
+import Theme from '@/components/Th'
+import Subtitle from '@/components/Subtitle'
 
 export default {
   components: {
@@ -166,12 +173,12 @@ export default {
 
   data: () => ({
     about: [
-      "AAKRUTI is Dassault Systèmes SOLIDWORKS Corporation Nationwide Product Design Contest. AAKRUTI was launched in 2011 and has received tremendous response from all over India in the last 8 years. Each year brings forth a different theme with students surpassing the expectations with their innovative designs and ideas.",
-      "The objective of AAKRUTI is to reach out to the engineering colleges and universities across India and make them aware about latest trends in the Product Design and Manufacturing domain. AAKRUTI encourages students to showcase their design skills, creativity and innate talent and to use this contest as a platform to design a product that can be commercially manufactured which can eventually benefit the nation.",
-      "Dassault Systèmes will offer a limited period license of SOLIDWORKS education edition to all the registered teams to design and simulate their product ideas."
+      'AAKRUTI is Dassault Systèmes SOLIDWORKS Corporation Nationwide Product Design Contest. AAKRUTI was launched in 2011 and has received tremendous response from all over India in the last 9 years. Each year brings forth a different theme with students surpassing the expectations with their innovative designs and ideas.',
+      'The objective of AAKRUTI is to reach out to the engineering colleges and universities across India and make them aware about latest trends in the Product Design and Manufacturing domain. AAKRUTI encourages students to showcase their design skills, creativity and innate talent and to use this contest as a platform to design a product that can be commercially manufactured which can eventually benefit the nation.',
+      'Dassault Systèmes will offer a limited period license of SOLIDWORKS education edition to all the registered teams to design and simulate their product ideas.'
     ]
   })
-};
+}
 </script>
 
 <style scoped>
@@ -182,26 +189,26 @@ export default {
 }
 .bottomtext {
   font-size: calc(16px + 5 * ((100vw - 320px) / 880));
-  font-family: "3ds";
+  font-family: '3ds';
   text-align: left !important;
   color: #2f2e41;
 }
 
 .fontz {
   font-size: calc(12px + 4 * ((100vw - 320px) / 880));
-  font-family: "3ds-light";
+  font-family: '3ds-light';
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.2px;
 }
 .fontz2 {
   font-size: calc(12px + 4 * ((100vw - 320px) / 880));
-  font-family: "3ds";
+  font-family: '3ds';
 }
 
 .fontz22 {
   font-size: calc(15px + 4 * ((100vw - 320px) / 880)) !important;
-  font-family: "3ds";
+  font-family: '3ds';
 }
 
 .bord {
