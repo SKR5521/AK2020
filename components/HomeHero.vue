@@ -3,10 +3,7 @@
     <!-- <HomeSlides/> -->
     <v-row no-gutters style="margin-top: 15vh;">
       <v-col justify="center" align="center" class="white--text animated fadeInDown pb-5">
-        <h1 class="fontz">
-          AAKRUTI
-          <span class="lightfont">2020</span>
-        </h1>
+        <h1 class="fontz">AAKRUTI<span class="lightfont">2020</span></h1>
         <h2 class="fontz2">Shaping Imagination</h2>
       </v-col>
 
