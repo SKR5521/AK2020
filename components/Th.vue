@@ -113,9 +113,9 @@ export default {
 }
 
 .bord {
-  border-radius: 14px;
-  background-color: #f5f5f5;
-  border-bottom: 10px solid #044b7c;
+  border-radius: 16px;
+  background-color: #f5f5f5 !important;
+  border-bottom: 15px solid #044b7c;
 }
 .fontzd {
   font-size: calc(15px + 1 * ((100vw - 320px) / 880));
