@@ -9,7 +9,7 @@
       <v-app-bar>
         <v-container fluid>
           <v-row>
-            <v-col>
+            <v-col >
               <a target="_blank" href="https://www.3ds.com/">
                 <v-img max-width="120px" :src="require('../assets/img/DS1.png')"></v-img>
               </a>

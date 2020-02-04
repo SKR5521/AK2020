@@ -1,14 +1,11 @@
 <template>
   <nav>
     <v-toolbar flat dark :color="col">
-      
-      <v-toolbar-title class="text-uppercase white--text ml-0">
-        <!-- <a router :to="Home.route"><span class="font-weight-bold">AAKRUTI</span><span class="font-weight-light">2019</span></a>        -->
-        <v-card width="180px" color="transparent" :to="Home.route">
-          <v-img contain :src="require('../assets/img/SWX.png')"></v-img>
-        </v-card>
-      </v-toolbar-title>
-
+      <a target="_blank" href="https://www.solidworks.com/">
+        <!-- <v-img max-width="144px" :src="require('../assets/img/SWX.png')"></v-img>
+        -->
+        <v-img justify="center" height="33px" width="180px" :src="require('../assets/img/SWX.png')"></v-img>
+      </a>
       <v-spacer></v-spacer>
     </v-toolbar>
   </nav>
